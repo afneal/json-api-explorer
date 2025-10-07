@@ -12,8 +12,8 @@ document.addEventListener('click', function (event) {
 		fetch("https://jsonplaceholder.typicode.com/posts")
 			.then(response => {
 				response.json().then(data => {
-					postList.innerHTML = `<p>${titleInput.value}<br />
-                    ${bodyInput.value}</p>`;
+					postList.innerHTML = `<h2>${titleInput.value}</h2>
+                    <p>${bodyInput.value}</p>`;
 				});
 			});
 	}
